@@ -1,0 +1,215 @@
+body {
+    background-color: rgba(255, 255, 255, 0.64);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100vw;
+    height: 15vh;
+    background: linear-gradient(to right, #004d9f, #459efe);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#add-book-area {
+    margin: 2vh 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mdi-plus-box {
+    font-size: 20px;
+}
+
+
+#add-book {
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vh 3vw;
+    background-color: #3294fc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+
+}
+
+#add-book p {
+
+    margin: 0;
+    margin-left: 5px;
+}
+
+#addBookBtn {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-book:hover {
+    background-color: #004d9f;
+}
+
+
+/* Form */
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+#bookFormContainer {
+    display: none;
+    overflow: auto;
+    width: 20vw;
+    height: 45vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    z-index: 2;
+}
+
+#bookFormContainer h2 {
+    margin-top: 0;
+}
+
+#bookFormContainer label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+
+#bookFormContainer input {
+    width: 92%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#bookFormContainer button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1vh 2.5vw;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#bookFormContainer button:hover {
+    background-color: black;
+    color: white;
+}
+
+#form-error {
+    display: none;
+    width: 25vw;
+    height: 10vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid;
+    z-index: 3;
+}
+
+#error-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#okay-button-box {
+    display: flex;
+}
+
+#okay {
+    padding: 1vh 2.5vw;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(166, 166, 166);
+}
+
+#okay:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #3294fc;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+
+}
+
+.remove-book {
+    background-color: rgba(185, 179, 179, 0.606);
+    color: black;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.remove-book:hover {
+    background-color: white;
+}
